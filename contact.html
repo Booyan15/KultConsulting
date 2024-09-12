@@ -14,18 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <script>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "M_RAsaq3lvclGvoC0",
-      });
-   })();
-</script>
-    </script>
+    
 </head>
 <body>
 
@@ -71,7 +60,7 @@
                 <!-- Contact Form on the left -->
                 <div class="col-md-6 contact-form-container">
                     <h3>Испратете ни порака</h3>
-                    <form onsubmit="emailSend(); return false;" class="contact-form">
+                    <form action="#" onsubmit="sendMail();" class="contact-form">
                         <div class="form-group">
                           <input type="text" id="name" class="form-control" placeholder="Име и Презиме" name="name" required>
                         </div>
@@ -81,15 +70,17 @@
                         <div class="form-group">
                           <input type="email" id="email" class="form-control" placeholder="E-mail" name="email" required>
                         </div>
+                        <div class="form-group">
+                          <textarea id="message" class="form-control" placeholder="Порака" name="message" rows="4" required></textarea>
+                        </div>
                         <button type="submit" onclick="sendMail()" class="btn btn-primary btn-block">Испрати</button>
-                      </form>
+                    </form>
                 </div>
 
-                <script>
-                    emailjs.init("M_RAsaq3lvclGvoC0 "); // Replace with your EmailJS user ID
-                  </script>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script src="script.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-                  <script src="Submit.js"></script>
                   
 
 
