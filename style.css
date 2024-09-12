@@ -47,7 +47,7 @@ footer {
 /* The div that holds all the logos */
 .logo-scroll {
     display: flex;
-    animation: scrollLeftToRight 30s linear infinite; /* Increased duration for more space */
+    animation: scrollLeftToRight 25s linear infinite; /* Increased duration for more space */
 }
 
 /* Logo images */
@@ -60,10 +60,10 @@ footer {
 /* Keyframes for infinite scrolling from left to right */
 @keyframes scrollLeftToRight {
     0% {
-        transform: translateY(0); /* Initial position */
+        transform: translateY(50); /* Initial position */
     }
     100% {
-        transform: translateX(-40%); /* Adjust to match logo container width */
+        transform: translateX(-220%); /* Adjust to match logo container width */
     }
 }
 
