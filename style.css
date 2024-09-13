@@ -1,15 +1,23 @@
-/* Black-and-White Hero Section */
+/* Default hero styles for smaller screens (mobile and tablet) */
 .hero {
     background: #000;
     color: #fff;
-    height: 80vh;
+    min-height: 100vh; /* Default for mobile */
     display: flex;
     align-items: center;
-    background-image: url(logo.jpg);
+    background-color: #060807;
+    padding-top: 80px; /* Adjust to ensure content is not hidden behind the navbar */
+}
+
+/* Hero styles for larger screens (PC) */
+@media (min-width: 992px) {
+    .hero {
+        min-height: 80vh; /* Reduce the height for larger screens */
+    }
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #fff;
 }
@@ -27,6 +35,7 @@
     color: #000;
     border: none;
 }
+
 
 /* Footer */
 footer {
