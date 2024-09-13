@@ -2,18 +2,11 @@
 .hero {
     background: #000;
     color: #fff;
-    min-height: 100vh; /* Default for mobile */
+    min-height: 80vh; /* Default for mobile */
     display: flex;
     align-items: center;
     background-color: #060807;
     padding-top: 80px; /* Adjust to ensure content is not hidden behind the navbar */
-}
-
-/* Hero styles for larger screens (PC) */
-@media (min-width: 992px) {
-    .hero {
-        min-height: 80vh; /* Reduce the height for larger screens */
-    }
 }
 
 .hero h1 {
